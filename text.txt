@@ -1,0 +1,27 @@
+As per the current understanding 
+
+"DayFile.EmployeeHistory,2,List,Count" --> this explains that EmployeeHistory is a table , 2 represents 
+data information present on the 2 line of the text document , List represents the number of records , Count represents
+that the data type is going to be a list
+
+"DayFile.EmployeeHistory[],3,Obj,EmployeeID,FirstName,LastName,DisplayName" --> this states that the data type is 
+going to be an object , with following as the Column names
+
+
+and these two are somewhat nested tables or maybe a relationship exists between these 
+two tables
+
+DayFile.EmployeeHistory[].JobHistory,4,List,Count
+DayFile.EmployeeHistory[].JobHistory[],5,Obj,JobName,Department,LaborCostGroup,LaborCostCode,PayRate,PayType
+
+
+##### Questions to ask client
+
+"DayFile.EmployeeHistory,2,List,Count" here it says count meaning the data type is going to be a list , however ,
+"DayFile.EmployeeHistory[],3,Obj,EmployeeID,FirstName,LastName,DisplayName" here the data type is written as Object.
+This is the confusion.
+
+DayFile.EmployeeHistory and DayFile.EmployeeHistory[].JobHistory , is there any relationship between these two
+tables?
+
+
