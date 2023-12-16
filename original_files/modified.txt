@@ -1,0 +1,471 @@
+DayFile.EmployeeHistory,2,List,Count
+DayFile.EmployeeHistory[],3,Obj,EmployeeID,FirstName,LastName,DisplayName
+DayFile.EmployeeHistory[].JobHistory,4,List,Count
+DayFile.EmployeeHistory[].JobHistory[],5,Obj,JobName,Department,LaborCostGroup,LaborCostCode,PayRate,PayType
+DayFile.EmployeeLabor,6,List,Count
+DayFile.EmployeeLabor[],7,Obj,Job,JobType,Department,LaborCostGroup,LaborCostCode,SalaryType,EODID,EmployeeID,EmpDisplayName,EmpFullName,Date,HoursWorked,InStoreHours,OutOfStoreHours,RegHoursWorked,RegPrimaryHours,RegAlternateHours,OTHours1Worked,OTHours2Worked,PrevRegHours,PrevHours,PayRate,AlternatePayRate,AlternatePayWhenOutOfStore,DayOTHours1,DayOTRate1,DayOTHours2,DayOTRate2,OTHours1,OTRate1,OTHours2,OTRate2,ClockedOut,TicketsHandled,Tips,PayPeriodTips,DriverFees,Odometer,EstimatedDriveDistance,Edited,LastEditedBy,LastEditDate,OrigBreaks,OrigBreakTime,OrigMealBreaks,OrigMealBreakTime,OrigHoursWorked,OrigTips,OrigOdometer,ShiftID,AutoClockOut,Breaks,BreakTime,MealBreaks,MealBreakTime,RegPay,RegPrimaryPay,RegAlternatePay,OTPay1,OTPay2,Deleted,AdditionalPayroll,ShiftNote,ShiftNoteLastEdited
+DayFile.EmployeeLabor[].EmpShiftDetails,8,List,Count
+DayFile.EmployeeLabor[].EmpShiftDetails[],9,Obj,DateTime,Event,LastEdit,EditedBy,OverrideEmpId
+DayFile.EmployeeLabor[].EmpShiftDetailsHistory,10,List,Count
+DayFile.EmployeeLabor[].EmpShiftDetailsHistory[],11,Obj,LastEditedBy,EditDate,HoursWorked,Tips,PayPeriodTips,Odometer,Job,Department,DriverFees,AdditionalPayroll,LaborCostGroup,LaborCostCode
+DayFile.EmployeeLabor[].EmpShiftDetailsHistory[].EmpShiftDetails,12,List,Count
+DayFile.EmployeeLabor[].EmpShiftDetailsHistory[].EmpShiftDetails[],13,Obj,DateTime,Event,LastEdit,EditedBy,OverrideEmpId
+DayFile.BankAccounts,14,List,Count
+DayFile.BankAccounts[],15,Obj,AccountID,DrawerName,SessionID,Opened,Closed
+DayFile.BankAccounts[].ShortOverInfo,16,Obj,EmployeeID,EmployeeName,LastCount
+DayFile.BankAccounts[].ShortOverInfo.TenderCounts,17,List,Count
+DayFile.BankAccounts[].ShortOverInfo.TenderCounts[],18,Obj,TenderName,OpeningAmount,ExpectedAmount,ActualAmount,ExpectedAmountBase,ActualAmountBase
+DayFile.BankAccounts[].ShortOverInfo.TenderCounts[].CountDetails,19,List,Count
+DayFile.BankAccounts[].ShortOverInfo.TenderCounts[].CountDetails[],20,Obj,Description,Amount,Quantity
+DayFile.Transactions,21,List,Count
+DayFile.Transactions[],22,Obj,AccountID,DrawerName,SessionID,TransID,ReverseTransID,GroupingTransID,DateTime,TransType,TenderName,TenderGroupName,Amount,ForeignAmount,TransData,TicketSeq,TicketID,HATransID,HACustomerID,EmpID,StationName,StoreID,Link
+DayFile.SystemEvents,23,List,Count
+DayFile.SystemEvents[],24,Obj,EventDateTime,EmployeeID,StationName,EventID,Data
+DayFile.BuffetUsageItems,25,List,Count
+DayFile.BuffetUsageItems[],26,Obj,TemplateName,CalculatedUsage,MinimumQuantity
+DayFile.BuffetUsageItems[].MenuSelections,27,List,Count
+DayFile.BuffetUsageItems[].MenuSelections[],28,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ObjectVersion,Quantity,SizeName,SizeCaption,SizeCaption2,SizeSortOrder,CouponSizeSubsitution,PriceGroupName,PriceGroupCaption,PriceGroupCaption2,Notes,ForceSingle,TargetTaxGroup,TaxGroup,Version,ItemSeq,SubstitutedItemSeq,LinkedOCItemSeq,ManualOCLink,LinkedOCRuleIndex,GroupedLinkedOC,LinkedOChargeItemSeq,RequiredByOCItemSeq,MenuCalculatedPrice,IsAggregateSelection,ApplyPriceToAggregateSelection,ApplyPriceFromAggregatedSelections,MenuCalculatedPriceOfAggregatedSelections,Discount,DiscountOfAggregatedSelections,ApplyDiscountToSelection,ApplyDiscountFromAggregatedSelections,TargetPrice,Price,BaseItemPrice,OrigBaseItemPrice,ManualPrice,NetSales,ExcludedNetSales,Seat,LabelPrinted,RoutePrintCount,KDSSendCount,SplitPortion,VoidReason,Made,VoidedBy,VoidedDateTime,Course,DirectedEntrySeqID,ExternalID,LinkedOrderCreditExternalID,PanelNodeName
+DayFile.BuffetUsageItems[].MenuSelections[].Tags,29,List,Count
+DayFile.BuffetUsageItems[].MenuSelections[].Tags[],30,Obj,Name
+DayFile.BuffetUsageItems[].MenuSelections[].ItemTags,31,List,Count
+DayFile.BuffetUsageItems[].MenuSelections[].ItemTags[],32,Obj,Name
+DayFile.BuffetUsageItems[].MenuSelections[].Portions,33,List,Count
+DayFile.BuffetUsageItems[].MenuSelections[].Portions[],34,Obj,Name,Caption,Caption2,Fraction,SortOrder
+DayFile.BuffetUsageItems[].MenuSelections[].Portions[].Modifiers,35,List,Count
+DayFile.BuffetUsageItems[].MenuSelections[].Portions[].Modifiers[],36,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ModifierAction,ModifierActionName,ModifierActionCaption,ModifierActionCaption2,ModifierActionHiLight
+DayFile.BuffetUsageItems[].MenuSelections[].Portions[].Modifiers[].Tags,37,List,Count
+DayFile.BuffetUsageItems[].MenuSelections[].Portions[].Modifiers[].Tags[],38,Obj,Name
+DayFile.BuffetUsageItems[].MenuSelections[].Portions[].Modifiers[].ItemTags,39,List,Count
+DayFile.BuffetUsageItems[].MenuSelections[].Portions[].Modifiers[].ItemTags[],40,Obj,Name
+DayFile.BuffetUsageItems[].MenuSelections[].SourceSplitLocation,41,List,Count
+DayFile.BuffetUsageItems[].MenuSelections[].SourceSplitLocation[],42,Obj,TicketSeq,ItemSeq
+DayFile.BuffetUsageItems[].MenuSelections[].DestSplitLocations,43,List,Count
+DayFile.BuffetUsageItems[].MenuSelections[].DestSplitLocations[],44,Obj,TicketSeq,ItemSeq
+DayFile.ActiveMenus,45,List,Count
+DayFile.ActiveMenus[],46,Obj,FileName,UserDefinedVersion,Edited,MDVersion,MDRelease,MDBuild
+DayFile.Customers,47,List,Count
+DayFile.Customers[],48,Obj,Seq,ID,SectionID,SectionCode,SectionCaption,SectionCaption2,TableID,TableCaption,TableCaption2,PartyID,ItemSeq,AuthSeq,Created,Delivered,StopNumber,AssignedTime,ReturnedTime,FirstCloseTime,QuotedMinutesBase,QuotedMinutesAdjustment,QuotedMinutes,QuotedTime,QuotedTimeSetAsTime,QuotedTimeSetByUser,OrderedAsOfTime,TimeInKitchen,TimeOTD,TimePredictedOTD,TimePredictionMade,PredictionFinalFilterState,WorkAmount,WorkAmountWhenQueued,IsGoodDataPoint,Status,DefaultOrderServiceType,OrderServiceType,Version,CreatedBy,CreatedByName,CreatedByInternalID,AssignedTo,AssignedToName,PaymentToAssignedBank,DriverFeeTransID,Notes,DeletedOrderChargeTypes,TenderRounding,DeferPrint,DeferRequired,DeferReminder,DeferReminderDone,PriceGroupName,PriceGroupCaption,PriceGroupCaption2,ForcePriceGroupForNewSelections,NetSales,ExcludedNetSales,PrintCount,RoutePrintCount,NoteRoutePrintCount,KDSSendCount,VoidReason,VoidType,UserChoseZeroSeats,RunSize,RunID,CurrentCourse,CustSatisfactionDetermined,CustSatisfactionFlag,DeferredTicketID,DeferredTicketSeq,VoidDeferredTicketID,VoidDeferredTicketSeq,VoidDeferredTicketEODID,RequiresPostActivatePrint,OrderLinkSource,OrderSource,CustomerIP,Agent,ExternalID,LimitedDeliveryZone,OverridenDueToMaxSelectionsPerTicket,OverrideMaxMenuSelectionValue,BarCode,TaxJurisdiction,TaxExempt,TaxExemptNumber,TaxationCalcType,LoyaltyEarnedPoints,LoyaltyDollarValue,LoyaltyStoreAndForward,PromptedForLoyalty,EstimatedOnRoad,CalculatedOnRoad,EstimatedDriveDistance,ConfirmationEmailSent,ConfirmationEmailPending,HasConfirmedEmailAddress,DriverETA,LockedToConnectSourcePricing,TextCopy,PendingAuthTime,ThirdPartyDeliveryType,ThirdPartyDeliveryTip,DoorDashID,DoorDashPickupTime,DoorDashDeliveryTime,DoorDashExternalID,DoorDashSubTotal,DoorDashFee,DoorDashTip
+DayFile.Customers[].Activity,49,List,Count
+DayFile.Customers[].Activity[],50,Obj,Time,EmpID,EmpName,Action,ActionID,Station,StoreId,ActionItemSeq
+DayFile.Customers[].StatusTimes,51,List,Count
+DayFile.Customers[].StatusTimes[],52,Obj,Status,DateTime
+DayFile.Customers[].Customer,53,Obj,CustomerType,AllowDelivery,Distance,ChargeOverride,ID,Created,Telephone,CompanyName,FirstName,LastName,Apartment,StreetNumber,StreetName,City,State,Zip,Stairway,Floor,EMail,EMailOptIn,EMailOptInDate,EMailOptInEmployeeID,Zone1,Zone2,Zone3,Zone4,Zone1Caption,Zone2Caption,Zone3Caption,Zone4Caption,DeliveryZoneOverridden,Instructions,Notes,FullNameStr,New,AddressInDB,AddressOverridden,TotalOrders,LastOrder,FrequentOrders,FrequentOrderValue,ZoneQuotedTimeAdjustment,CreditAvailable,StreetSkipped,AcceptChecks,HAStatus,HACreditLimit,HABalance,NoCheckFlag,Birthdate,TaxJurisdiction,TaxExempt,TaxExemptNumber,Latitude,Longitude,GeocodeQuality,FormattedAddress,GeocodingSkipped,GeocodingOverridden,NominatimGeocodeDate,LiveMapsCity
+DayFile.Customers[].MenuSelections,54,List,Count
+DayFile.Customers[].MenuSelections[],55,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ObjectVersion,Quantity,SizeName,SizeCaption,SizeCaption2,SizeSortOrder,CouponSizeSubsitution,PriceGroupName,PriceGroupCaption,PriceGroupCaption2,Notes,ForceSingle,TargetTaxGroup,TaxGroup,Version,ItemSeq,SubstitutedItemSeq,LinkedOCItemSeq,ManualOCLink,LinkedOCRuleIndex,GroupedLinkedOC,LinkedOChargeItemSeq,RequiredByOCItemSeq,MenuCalculatedPrice,IsAggregateSelection,ApplyPriceToAggregateSelection,ApplyPriceFromAggregatedSelections,MenuCalculatedPriceOfAggregatedSelections,Discount,DiscountOfAggregatedSelections,ApplyDiscountToSelection,ApplyDiscountFromAggregatedSelections,TargetPrice,Price,BaseItemPrice,OrigBaseItemPrice,ManualPrice,NetSales,ExcludedNetSales,Seat,LabelPrinted,RoutePrintCount,KDSSendCount,SplitPortion,VoidReason,Made,VoidedBy,VoidedDateTime,Course,DirectedEntrySeqID,ExternalID,LinkedOrderCreditExternalID,PanelNodeName
+DayFile.Customers[].MenuSelections[].Tags,56,List,Count
+DayFile.Customers[].MenuSelections[].Tags[],57,Obj,Name
+DayFile.Customers[].MenuSelections[].ItemTags,58,List,Count
+DayFile.Customers[].MenuSelections[].ItemTags[],59,Obj,Name
+DayFile.Customers[].MenuSelections[].Portions,60,List,Count
+DayFile.Customers[].MenuSelections[].Portions[],61,Obj,Name,Caption,Caption2,Fraction,SortOrder
+DayFile.Customers[].MenuSelections[].Portions[].Modifiers,62,List,Count
+DayFile.Customers[].MenuSelections[].Portions[].Modifiers[],63,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ModifierAction,ModifierActionName,ModifierActionCaption,ModifierActionCaption2,ModifierActionHiLight
+DayFile.Customers[].MenuSelections[].Portions[].Modifiers[].Tags,64,List,Count
+DayFile.Customers[].MenuSelections[].Portions[].Modifiers[].Tags[],65,Obj,Name
+DayFile.Customers[].MenuSelections[].Portions[].Modifiers[].ItemTags,66,List,Count
+DayFile.Customers[].MenuSelections[].Portions[].Modifiers[].ItemTags[],67,Obj,Name
+DayFile.Customers[].MenuSelections[].SourceSplitLocation,68,List,Count
+DayFile.Customers[].MenuSelections[].SourceSplitLocation[],69,Obj,TicketSeq,ItemSeq
+DayFile.Customers[].MenuSelections[].DestSplitLocations,70,List,Count
+DayFile.Customers[].MenuSelections[].DestSplitLocations[],71,Obj,TicketSeq,ItemSeq
+DayFile.Customers[].VoidedMenuSelections,72,List,Count
+DayFile.Customers[].VoidedMenuSelections[],73,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ObjectVersion,Quantity,SizeName,SizeCaption,SizeCaption2,SizeSortOrder,CouponSizeSubsitution,PriceGroupName,PriceGroupCaption,PriceGroupCaption2,Notes,ForceSingle,TargetTaxGroup,TaxGroup,Version,ItemSeq,SubstitutedItemSeq,LinkedOCItemSeq,ManualOCLink,LinkedOCRuleIndex,GroupedLinkedOC,LinkedOChargeItemSeq,RequiredByOCItemSeq,MenuCalculatedPrice,IsAggregateSelection,ApplyPriceToAggregateSelection,ApplyPriceFromAggregatedSelections,MenuCalculatedPriceOfAggregatedSelections,Discount,DiscountOfAggregatedSelections,ApplyDiscountToSelection,ApplyDiscountFromAggregatedSelections,TargetPrice,Price,BaseItemPrice,OrigBaseItemPrice,ManualPrice,NetSales,ExcludedNetSales,Seat,LabelPrinted,RoutePrintCount,KDSSendCount,SplitPortion,VoidReason,Made,VoidedBy,VoidedDateTime,Course,DirectedEntrySeqID,ExternalID,LinkedOrderCreditExternalID,PanelNodeName
+DayFile.Customers[].VoidedMenuSelections[].Tags,74,List,Count
+DayFile.Customers[].VoidedMenuSelections[].Tags[],75,Obj,Name
+DayFile.Customers[].VoidedMenuSelections[].ItemTags,76,List,Count
+DayFile.Customers[].VoidedMenuSelections[].ItemTags[],77,Obj,Name
+DayFile.Customers[].VoidedMenuSelections[].Portions,78,List,Count
+DayFile.Customers[].VoidedMenuSelections[].Portions[],79,Obj,Name,Caption,Caption2,Fraction,SortOrder
+DayFile.Customers[].VoidedMenuSelections[].Portions[].Modifiers,80,List,Count
+DayFile.Customers[].VoidedMenuSelections[].Portions[].Modifiers[],81,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ModifierAction,ModifierActionName,ModifierActionCaption,ModifierActionCaption2,ModifierActionHiLight
+DayFile.Customers[].VoidedMenuSelections[].Portions[].Modifiers[].Tags,82,List,Count
+DayFile.Customers[].VoidedMenuSelections[].Portions[].Modifiers[].Tags[],83,Obj,Name
+DayFile.Customers[].VoidedMenuSelections[].Portions[].Modifiers[].ItemTags,84,List,Count
+DayFile.Customers[].VoidedMenuSelections[].Portions[].Modifiers[].ItemTags[],85,Obj,Name
+DayFile.Customers[].VoidedMenuSelections[].SourceSplitLocation,86,List,Count
+DayFile.Customers[].VoidedMenuSelections[].SourceSplitLocation[],87,Obj,TicketSeq,ItemSeq
+DayFile.Customers[].VoidedMenuSelections[].DestSplitLocations,88,List,Count
+DayFile.Customers[].VoidedMenuSelections[].DestSplitLocations[],89,Obj,TicketSeq,ItemSeq
+DayFile.Customers[].OrderCredits,90,List,Count
+DayFile.Customers[].OrderCredits[],91,Obj,ObjectVersion,IncludeInReports,MenuCalculatedAmount,OrderCreditType,ItemSeq,Rate,Amount,OverrideAmount,MaxAmount,MaxDiscount,Name,Caption,Caption2,CalcType,CalcBase,CalcSortOrder,ForceSingle,VoucherRequired,DiscountSelections,GroupSelectionsWithCoupon,DisplayLocation,IncludeSelectionsInPrice,DisplaySavings,AutoAddRemove,CheckRequirements,TaxGroup,TransID,CompGroup,CreditID,CouponID,CouponNodeSeqId,DistributionMethod,Created,EmpID,EmpJobName,LoyaltyReward,LoyaltyPointCost,LoyaltyProcessedTime,AggregateSelectionSeq,ApplySelectionPriceToAggregateSelection,ApplyDiscountToSelection,AdvertisedPrice
+DayFile.Customers[].OrderCharges,92,List,Count
+DayFile.Customers[].OrderCharges[],93,Obj,OrderChargeType,ItemSeq,TransID,Rate,Amount,MaxAmount,CalcBase,CalcSortOrder,ForceSingle,Name,Caption,Caption2,TaxGroup,DeliveryChargeType,GratuityType,TenderChargeType,OrderSurchargeType,MiscChargeType
+DayFile.Customers[].DeletedOrderCharges,94,List,Count
+DayFile.Customers[].DeletedOrderCharges[],95,Obj,OrderChargeType,ItemSeq,TransID,Rate,Amount,MaxAmount,CalcBase,CalcSortOrder,ForceSingle,Name,Caption,Caption2,TaxGroup,DeliveryChargeType,GratuityType,TenderChargeType,OrderSurchargeType,MiscChargeType
+DayFile.Customers[].Taxes,96,List,Count
+DayFile.Customers[].Taxes[],97,Obj,TaxID,Caption,Caption2,Value,ShowZero,Exempt,AllTaxIncluded,ReportIncludedTax,Subtotal,Quantity,SummaryTaxName
+DayFile.Customers[].Taxes[].TaxDetails,98,List,Count
+DayFile.Customers[].Taxes[].TaxDetails[],99,Obj,DetailType,DetailItemIndex,Value
+DayFile.Customers[].ExemptTaxes,100,List,Count
+DayFile.Customers[].ExemptTaxes[],101,Obj,Name,Selected
+DayFile.Customers[].Payments,102,List,Count
+DayFile.Customers[].Payments[],103,Obj,ItemSeq,ExternalID,Name,GroupName,Caption,Caption2,Tendered,ForeignAmountTendered,ExchangeRate,Converted,Amount,ChangeAmount,TransID,BaseChangeTransID,ForeignChangeTransID,Reference,CustomerAccount,AmountAuth,GratuityAmount,MultiTicketPayment,PaymentDateTime,ExpectedPaymentItemSeq,Expands,RoundingAmount,RoundingThreshold,RoundingMethod
+DayFile.Customers[].Payments[].CardInfo,104,Obj,CardPresent,CardSwiped,CardType,CreditCardType,CardSource,CardSourceSetTime,IsEMVAuthAttempt,CardNumberVerifiedByProcessor,CardNumber,CardExpiry,ProcessorInterface,Processor,MerchantID,InvoiceNumberStr,InvoiceNumberStr2,AVSZip,AVSStreet,AVSCode,CardMemberName,CVV2Result,AuthCode,Reference,TransID,RefTransID,TroutD,AcqRefData,ProcessData,Duplicate,DateTime,ActionCode,CardBalance,AuthorizedAmount,PartialAuthorization,ObtainedPreauth,ObtainedPostauth,RecordNo,MonetraTempToken,MonetraTempTokenDelete,PaymentType,SubmissionType,NetworkTransactionID,ProcessorDateTime,EMVEntryMode,EMVEntryModeString,EMVCVM,EMVCVMString,EMVResponseCode,EMVIssuerResponseCode,EMVLanguage,EMVBatch,EMVAID,EMVName,EMVTVR,EMVTSI,EMVACType,EMVAC,EMVCode,EMVStan,EMVCustom,EMVTransType,EMVErrorCode,EMVNeedSignature,EMVVerbiage,EMVItem,EMVMsoftCode,EMVPhardCode,EMVPCLevel,EMVIAD,EMVARC,EMVTerminalID,PrintData,AttemptedPurchaseAmount,AttemptedGratuityAmount,DeviceTipAmount,GratuityAmount,AccountType
+DayFile.Customers[].Payments[].CardInfo.AuthHistory,105,List,Count
+DayFile.Customers[].Payments[].CardInfo.AuthHistory[],106,Obj,AcqRefData,AttemptedGratuityAmount,AttemptedPurchaseAmount,AVSCode,CVV2Result,EMVAID,EMVARC,EMVCode,EMVCVM,EMVCVMString,EMVEntryMode,EMVEntryModeString,EMVIAD,EMVName,EMVPreParseReference,EMVTerminalID,EMVTransType,EMVTSI,EMVTVR,IsEMVAuthAttempt,PreParsePrintData,ProcessData,ProcessorDateTime,RecordNo
+DayFile.Customers[].DeliveryPayments,107,List,Count
+DayFile.Customers[].DeliveryPayments[],108,Obj,ItemSeq,ExternalID,Name,GroupName,Caption,Caption2,Tendered,ForeignAmountTendered,ExchangeRate,Converted,Amount,ChangeAmount,TransID,BaseChangeTransID,ForeignChangeTransID,Reference,CustomerAccount,AmountAuth,GratuityAmount,MultiTicketPayment,PaymentDateTime,ExpectedPaymentItemSeq,Expands,RoundingAmount,RoundingThreshold,RoundingMethod
+DayFile.Customers[].DeliveryPayments[].CardInfo,109,Obj,CardPresent,CardSwiped,CardType,CreditCardType,CardSource,CardSourceSetTime,IsEMVAuthAttempt,CardNumberVerifiedByProcessor,CardNumber,CardExpiry,ProcessorInterface,Processor,MerchantID,InvoiceNumberStr,InvoiceNumberStr2,AVSZip,AVSStreet,AVSCode,CardMemberName,CVV2Result,AuthCode,Reference,TransID,RefTransID,TroutD,AcqRefData,ProcessData,Duplicate,DateTime,ActionCode,CardBalance,AuthorizedAmount,PartialAuthorization,ObtainedPreauth,ObtainedPostauth,RecordNo,MonetraTempToken,MonetraTempTokenDelete,PaymentType,SubmissionType,NetworkTransactionID,ProcessorDateTime,EMVEntryMode,EMVEntryModeString,EMVCVM,EMVCVMString,EMVResponseCode,EMVIssuerResponseCode,EMVLanguage,EMVBatch,EMVAID,EMVName,EMVTVR,EMVTSI,EMVACType,EMVAC,EMVCode,EMVStan,EMVCustom,EMVTransType,EMVErrorCode,EMVNeedSignature,EMVVerbiage,EMVItem,EMVMsoftCode,EMVPhardCode,EMVPCLevel,EMVIAD,EMVARC,EMVTerminalID,PrintData,AttemptedPurchaseAmount,AttemptedGratuityAmount,DeviceTipAmount,GratuityAmount,AccountType
+DayFile.Customers[].DeliveryPayments[].CardInfo.AuthHistory,110,List,Count
+DayFile.Customers[].DeliveryPayments[].CardInfo.AuthHistory[],111,Obj,AcqRefData,AttemptedGratuityAmount,AttemptedPurchaseAmount,AVSCode,CVV2Result,EMVAID,EMVARC,EMVCode,EMVCVM,EMVCVMString,EMVEntryMode,EMVEntryModeString,EMVIAD,EMVName,EMVPreParseReference,EMVTerminalID,EMVTransType,EMVTSI,EMVTVR,IsEMVAuthAttempt,PreParsePrintData,ProcessData,ProcessorDateTime,RecordNo
+DayFile.Customers[].Adjustments,112,List,Count
+DayFile.Customers[].Adjustments[],113,Obj,AdjustmentType,ItemSeq,TransType,TransID,Caption,Caption2,Amount,LinkedPaymentItemSeq,LinkedPaymentExternalID,StationAccountID,StationDrawerName
+DayFile.Customers[].OpenSeats,114,List,Count
+DayFile.Customers[].OpenSeats[],115,Obj,SeatNumber
+DayFile.Customers[].TicketPrintSettings,116,Obj,SkipPriming,RoutePrintCount,KDSSendCount,NoteRoutePrintCount,TicketStatus,ModifiedItems,Version,Seq,SavedPrintRequired,SavedPrintCount,TicketJustVoided
+DayFile.Customers[].TicketPrintSettings.MSPrintSettings,117,List,Count
+DayFile.Customers[].TicketPrintSettings.MSPrintSettings[],118,Obj,ItemSeq,LabelPrintRequired,SingleLabelPrintRequired,RoutePrintRequired,KDSSendRequired,RoutePrintCount,KDSSendCount,Version,Modified
+DayFile.Customers[].LoyaltyAccountInfo,119,Obj,AccountID,EntryType,Registered,Tier,CustomerName,CustomerEmail,POSMessagesToPrint,POSMessagesPrinted,MaskedCardNumber,AccountInfoRetrieved,AccountActive,EANBarCode,GroupingTransactionId
+DayFile.Customers[].LoyaltyAccountInfo.Balances,120,List,Count
+DayFile.Customers[].LoyaltyAccountInfo.Balances[],121,Obj,Name,ID,Balance
+DayFile.Customers[].LoyaltyAccountInfo.Balances[].Expirations,122,List,Count
+DayFile.Customers[].LoyaltyAccountInfo.Balances[].Expirations[],123,Obj,Date,Quantity
+DayFile.Customers[].LoyaltyAuthorizationInfo,124,Obj
+DayFile.Customers[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo,125,Obj,AccountID,EntryType,Registered,Tier,CustomerName,CustomerEmail,POSMessagesToPrint,POSMessagesPrinted,MaskedCardNumber,AccountInfoRetrieved,AccountActive,EANBarCode,GroupingTransactionId
+DayFile.Customers[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo.Balances,126,List,Count
+DayFile.Customers[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo.Balances[],127,Obj,Name,ID,Balance
+DayFile.Customers[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo.Balances[].Expirations,128,List,Count
+DayFile.Customers[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo.Balances[].Expirations[],129,Obj,Date,Quantity
+DayFile.Customers[].LoyaltyAuthorizationInfo.Transactions,130,List,Count
+DayFile.Customers[].LoyaltyAuthorizationInfo.Transactions[],131,Obj,TransType,BalanceID,Amount,LinkedItemSeq,AuthDateTime,AuthCode,RedemptionCode
+DayFile.Customers[].LoyaltyAuthorizationInfo.BalanceChanges,132,List,Count
+DayFile.Customers[].LoyaltyAuthorizationInfo.BalanceChanges[],133,Obj,ID,ExtendedID,Amount,Description
+DayFile.Customers[].Tags,134,List,Count
+DayFile.Customers[].Tags[],135,Obj,Name
+DayFile.HouseAccounts,136,List,Count
+DayFile.HouseAccounts[],137,Obj,StoreID,EODID,CustomerID,HATransID,ReverseHATransID,TransDate,HATransType,Amount,Note
+DayFile.Parties,138,List,Count
+DayFile.Parties[],139,Obj,PartyID,SectionID,SectionCode,SectionCaption,SectionCaption2,TableID,CreatedTime,FirstItemTime,LastPrintTime,LastClosedTime,BusTime
+DayFile.DeliveryRuns,140,List,Count
+DayFile.DeliveryRuns[],141,Obj,RunID,EmployeeID,EstimatedOnRoad,EstimatedDriveDistance,MappingErrors,ReturnEstimatedOnRoad,ReturnEstimatedDriveDistance,AssignedTime,ReturnTime,RunStatus
+DayFile.CustCredits,142,List,Count
+DayFile.CustCredits[],143,Obj,CustomerID,DateTime,CreditID,Amount,CreditType,EmployeeID,ExpirationDate,ExpirationCreditID
+DayFile.CustComments,144,List,Count
+DayFile.CustComments[],145,Obj,CommentID,CustomerID,DateTime,Comment,CommentType,EmployeeID,CreditID
+DayFile.StoreGroups,146,List,Count
+DayFile.StoreGroups[],147,Obj,Name,Selected
+DayFile.Tickets,148,List,Count
+DayFile.Tickets[],149,Obj,Seq,ID,SectionID,SectionCode,SectionCaption,SectionCaption2,TableID,TableCaption,TableCaption2,PartyID,ItemSeq,AuthSeq,Created,Delivered,StopNumber,AssignedTime,ReturnedTime,FirstCloseTime,QuotedMinutesBase,QuotedMinutesAdjustment,QuotedMinutes,QuotedTime,QuotedAsOfTime,QuotedTimeSetAsTime,QuotedTimeSetByUser,OrderedAsOfTime,TimeInKitchen,TimeOTD,TimePredictedOTD,TimePredictionMade,PredictionFinalFilterState,WorkAmount,WorkAmountWhenQueued,IsGoodDataPoint,Status,DefaultOrderServiceType,OrderServiceType,Version,CreatedBy,CreatedByName,CreatedByInternalID,AssignedTo,AssignedToName,PaymentToAssignedBank,DriverFeeTransID,Notes,DeletedOrderChargeTypes,TenderRounding,DeferPrint,DeferRequired,DeferReminder,DeferReminderDone,PriceGroupName,PriceGroupCaption,PriceGroupCaption2,ForcePriceGroupForNewSelections,NetSales,ExcludedNetSales,PrintCount,RoutePrintCount,NoteRoutePrintCount,KDSSendCount,VoidReason,VoidType,UserChoseZeroSeats,RunSize,RunID,CurrentCourse,CustSatisfactionDetermined,CustSatisfactionFlag,DeferredTicketID,DeferredTicketSeq,VoidDeferredTicketID,VoidDeferredTicketSeq,VoidDeferredTicketEODID,RequiresPostActivatePrint,OrderLinkSource,OrderSource,CustomerIP,Agent,ExternalID,LimitedDeliveryZone,OverridenDueToMaxSelectionsPerTicket,OverrideMaxMenuSelectionValue,BarCode,TaxJurisdiction,TaxExempt,TaxExemptNumber,TaxationCalcType,LoyaltyEarnedPoints,LoyaltyDollarValue,LoyaltyStoreAndForward,PromptedForLoyalty,EstimatedOnRoad,CalculatedOnRoad,EstimatedDriveDistance,ConfirmationEmailSent,ConfirmationEmailPending,HasConfirmedEmailAddress,DriverETA,LockedToConnectSourcePricing,TextCopy,PendingAuthTime,ThirdPartyDeliveryType,ThirdPartyDeliveryTip,DoorDashID,DoorDashPickupTime,DoorDashDeliveryTime,DoorDashExternalID,DoorDashSubTotal,DoorDashFee,DoorDashTip
+DayFile.Tickets[].Activity,150,List,Count
+DayFile.Tickets[].Activity[],151,Obj,Time,EmpID,EmpName,Action,ActionID,Station,StoreId,ActionItemSeq
+DayFile.Tickets[].StatusTimes,152,List,Count
+DayFile.Tickets[].StatusTimes[],153,Obj,Status,DateTime
+DayFile.Tickets[].Customer,154,Obj,CustomerType,AllowDelivery,Distance,ChargeOverride,ID,Created,Telephone,CompanyName,FirstName,LastName,Apartment,StreetNumber,StreetName,City,State,Zip,Stairway,Floor,EMail,EMailOptIn,EMailOptInDate,EMailOptInEmployeeID,Zone1,Zone2,Zone3,Zone4,Zone1Caption,Zone2Caption,Zone3Caption,Zone4Caption,DeliveryZoneOverridden,Instructions,Notes,FullNameStr,New,AddressInDB,AddressOverridden,TotalOrders,LastOrder,FrequentOrders,FrequentOrderValue,ZoneDeliveryCharge,ZoneMinimumCharge,ZoneDriverFee,ZoneQuotedTimeAdjustment,CreditAvailable,StreetSkipped,AcceptChecks,HAStatus,HACreditLimit,HABalance,NoCheckFlag,Birthdate,TaxJurisdiction,TaxExempt,TaxExemptNumber,Latitude,Longitude,GeocodeQuality,FormattedAddress,GeocodingSkipped,GeocodingOverridden,NominatimGeocodeDate,LiveMapsCity
+DayFile.Tickets[].MenuSelections,155,List,Count
+DayFile.Tickets[].MenuSelections[],156,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ObjectVersion,Quantity,SizeName,SizeCaption,SizeCaption2,SizeSortOrder,CouponSizeSubsitution,PriceGroupName,PriceGroupCaption,PriceGroupCaption2,Notes,ForceSingle,TargetTaxGroup,TaxGroup,Version,ItemSeq,SubstitutedItemSeq,LinkedOCItemSeq,ManualOCLink,LinkedOCRuleIndex,GroupedLinkedOC,LinkedOChargeItemSeq,RequiredByOCItemSeq,MenuCalculatedPrice,IsAggregateSelection,ApplyPriceToAggregateSelection,ApplyPriceFromAggregatedSelections,MenuCalculatedPriceOfAggregatedSelections,Discount,DiscountOfAggregatedSelections,ApplyDiscountToSelection,ApplyDiscountFromAggregatedSelections,TargetPrice,Price,BaseItemPrice,OrigBaseItemPrice,ManualPrice,NetSales,ExcludedNetSales,Seat,LabelPrinted,RoutePrintCount,KDSSendCount,SplitPortion,VoidReason,Made,VoidedBy,VoidedDateTime,Course,DirectedEntrySeqID,ExternalID,LinkedOrderCreditExternalID,PanelNodeName
+DayFile.Tickets[].MenuSelections[].Tags,157,List,Count
+DayFile.Tickets[].MenuSelections[].Tags[],158,Obj,Name
+DayFile.Tickets[].MenuSelections[].ItemTags,159,List,Count
+DayFile.Tickets[].MenuSelections[].ItemTags[],160,Obj,Name
+DayFile.Tickets[].MenuSelections[].Portions,161,List,Count
+DayFile.Tickets[].MenuSelections[].Portions[],162,Obj,Name,Caption,Caption2,Fraction,SortOrder
+DayFile.Tickets[].MenuSelections[].Portions[].Modifiers,163,List,Count
+DayFile.Tickets[].MenuSelections[].Portions[].Modifiers[],164,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ModifierAction,ModifierActionName,ModifierActionCaption,ModifierActionCaption2,ModifierActionHiLight
+DayFile.Tickets[].MenuSelections[].Portions[].Modifiers[].Tags,165,List,Count
+DayFile.Tickets[].MenuSelections[].Portions[].Modifiers[].Tags[],166,Obj,Name
+DayFile.Tickets[].MenuSelections[].Portions[].Modifiers[].ItemTags,167,List,Count
+DayFile.Tickets[].MenuSelections[].Portions[].Modifiers[].ItemTags[],168,Obj,Name
+DayFile.Tickets[].MenuSelections[].SourceSplitLocation,169,List,Count
+DayFile.Tickets[].MenuSelections[].SourceSplitLocation[],170,Obj,TicketSeq,ItemSeq
+DayFile.Tickets[].MenuSelections[].DestSplitLocations,171,List,Count
+DayFile.Tickets[].MenuSelections[].DestSplitLocations[],172,Obj,TicketSeq,ItemSeq
+DayFile.Tickets[].VoidedMenuSelections,173,List,Count
+DayFile.Tickets[].VoidedMenuSelections[],174,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ObjectVersion,Quantity,SizeName,SizeCaption,SizeCaption2,SizeSortOrder,CouponSizeSubsitution,PriceGroupName,PriceGroupCaption,PriceGroupCaption2,Notes,ForceSingle,TargetTaxGroup,TaxGroup,Version,ItemSeq,SubstitutedItemSeq,LinkedOCItemSeq,ManualOCLink,LinkedOCRuleIndex,GroupedLinkedOC,LinkedOChargeItemSeq,RequiredByOCItemSeq,MenuCalculatedPrice,IsAggregateSelection,ApplyPriceToAggregateSelection,ApplyPriceFromAggregatedSelections,MenuCalculatedPriceOfAggregatedSelections,Discount,DiscountOfAggregatedSelections,ApplyDiscountToSelection,ApplyDiscountFromAggregatedSelections,TargetPrice,Price,BaseItemPrice,OrigBaseItemPrice,ManualPrice,NetSales,ExcludedNetSales,Seat,LabelPrinted,RoutePrintCount,KDSSendCount,SplitPortion,VoidReason,Made,VoidedBy,VoidedDateTime,Course,DirectedEntrySeqID,ExternalID,LinkedOrderCreditExternalID,PanelNodeName
+DayFile.Tickets[].VoidedMenuSelections[].Tags,175,List,Count
+DayFile.Tickets[].VoidedMenuSelections[].Tags[],176,Obj,Name
+DayFile.Tickets[].VoidedMenuSelections[].ItemTags,177,List,Count
+DayFile.Tickets[].VoidedMenuSelections[].ItemTags[],178,Obj,Name
+DayFile.Tickets[].VoidedMenuSelections[].Portions,179,List,Count
+DayFile.Tickets[].VoidedMenuSelections[].Portions[],180,Obj,Name,Caption,Caption2,Fraction,SortOrder
+DayFile.Tickets[].VoidedMenuSelections[].Portions[].Modifiers,181,List,Count
+DayFile.Tickets[].VoidedMenuSelections[].Portions[].Modifiers[],182,Obj,Name,PLU,Category,SideItem,IncludeInPrepList,PrintCaption,PrintCaption2,ItemOrder,Sized,PrinterMakeRoute,PrintLabel,PrintSingleLabel,PrintPrepInstructions,PrintItemContents,ItemHiLight,AllowModifiers,MinModifiers,MaxModifiers,HiLightModifiers,ModifierOrder,ModifierHiLight,AllowDiscount,IncludeInNetSales,ButtonCaption,ButtonCaption2,LoyaltyProduct,MasterProductCode,ModifierAction,ModifierActionName,ModifierActionCaption,ModifierActionCaption2,ModifierActionHiLight
+DayFile.Tickets[].VoidedMenuSelections[].Portions[].Modifiers[].Tags,183,List,Count
+DayFile.Tickets[].VoidedMenuSelections[].Portions[].Modifiers[].Tags[],184,Obj,Name
+DayFile.Tickets[].VoidedMenuSelections[].Portions[].Modifiers[].ItemTags,185,List,Count
+DayFile.Tickets[].VoidedMenuSelections[].Portions[].Modifiers[].ItemTags[],186,Obj,Name
+DayFile.Tickets[].VoidedMenuSelections[].SourceSplitLocation,187,List,Count
+DayFile.Tickets[].VoidedMenuSelections[].SourceSplitLocation[],188,Obj,TicketSeq,ItemSeq
+DayFile.Tickets[].VoidedMenuSelections[].DestSplitLocations,189,List,Count
+DayFile.Tickets[].VoidedMenuSelections[].DestSplitLocations[],190,Obj,TicketSeq,ItemSeq
+DayFile.Tickets[].OrderCredits,191,List,Count
+DayFile.Tickets[].OrderCredits[],192,Obj,ObjectVersion,IncludeInReports,MenuCalculatedAmount,OrderCreditType,ItemSeq,Rate,Amount,OverrideAmount,MaxAmount,MaxDiscount,Name,Caption,Caption2,CalcType,CalcBase,CalcSortOrder,ForceSingle,VoucherRequired,DiscountSelections,GroupSelectionsWithCoupon,DisplayLocation,IncludeSelectionsInPrice,DisplaySavings,AutoAddRemove,CheckRequirements,TaxGroup,TransID,CompGroup,CreditID,CouponID,CouponNodeSeqId,DistributionMethod,Created,EmpID,EmpJobName,LoyaltyReward,LoyaltyPointCost,LoyaltyProcessedTime,AggregateSelectionSeq,ApplySelectionPriceToAggregateSelection,ApplyDiscountToSelection,AdvertisedPrice
+DayFile.Tickets[].OrderCharges,193,List,Count
+DayFile.Tickets[].OrderCharges[],194,Obj,OrderChargeType,ItemSeq,TransID,Rate,Amount,MaxAmount,CalcBase,CalcSortOrder,ForceSingle,Name,Caption,Caption2,TaxGroup,DeliveryChargeType,GratuityType,TenderChargeType,OrderSurchargeType,MiscChargeType
+DayFile.Tickets[].DeletedOrderCharges,195,List,Count
+DayFile.Tickets[].DeletedOrderCharges[],196,Obj,OrderChargeType,ItemSeq,TransID,Rate,Amount,MaxAmount,CalcBase,CalcSortOrder,ForceSingle,Name,Caption,Caption2,TaxGroup,DeliveryChargeType,GratuityType,TenderChargeType,OrderSurchargeType,MiscChargeType
+DayFile.Tickets[].Taxes,197,List,Count
+DayFile.Tickets[].Taxes[],198,Obj,TaxID,Caption,Caption2,Value,ShowZero,Exempt,AllTaxIncluded,ReportIncludedTax,Subtotal,Quantity,SummaryTaxName
+DayFile.Tickets[].Taxes[].TaxDetails,199,List,Count
+DayFile.Tickets[].Taxes[].TaxDetails[],200,Obj,DetailType,DetailItemIndex,Value
+DayFile.Tickets[].ExemptTaxes,201,List,Count
+DayFile.Tickets[].ExemptTaxes[],202,Obj,Name,Selected
+DayFile.Tickets[].Payments,203,List,Count
+DayFile.Tickets[].Payments[],204,Obj,ItemSeq,ExternalID,Name,GroupName,Caption,Caption2,Tendered,ForeignAmountTendered,ExchangeRate,Converted,Amount,ChangeAmount,TransID,BaseChangeTransID,ForeignChangeTransID,Reference,CustomerAccount,AmountAuth,GratuityAmount,MultiTicketPayment,PaymentDateTime,ExpectedPaymentItemSeq,Expands,RoundingAmount,RoundingThreshold,RoundingMethod
+DayFile.Tickets[].Payments[].CardInfo,205,Obj,CardPresent,CardSwiped,CardType,CreditCardType,CardSource,CardSourceSetTime,IsEMVAuthAttempt,CardNumberVerifiedByProcessor,CardNumber,CardExpiry,ProcessorInterface,Processor,MerchantID,InvoiceNumberStr,InvoiceNumberStr2,AVSZip,AVSStreet,AVSCode,CardMemberName,CVV2Result,AuthCode,Reference,TransID,RefTransID,TroutD,AcqRefData,ProcessData,Duplicate,DateTime,ActionCode,CardBalance,AuthorizedAmount,PartialAuthorization,ObtainedPreauth,ObtainedPostauth,RecordNo,MonetraTempToken,MonetraTempTokenDelete,PaymentType,SubmissionType,NetworkTransactionID,ProcessorDateTime,EMVEntryMode,EMVEntryModeString,EMVCVM,EMVCVMString,EMVResponseCode,EMVIssuerResponseCode,EMVLanguage,EMVBatch,EMVAID,EMVName,EMVTVR,EMVTSI,EMVACType,EMVAC,EMVCode,EMVStan,EMVCustom,EMVTransType,EMVErrorCode,EMVNeedSignature,EMVVerbiage,EMVItem,EMVMsoftCode,EMVPhardCode,EMVPCLevel,EMVIAD,EMVARC,EMVTerminalID,PrintData,AttemptedPurchaseAmount,AttemptedGratuityAmount,DeviceTipAmount,GratuityAmount,AccountType
+DayFile.Tickets[].Payments[].CardInfo.AuthHistory,206,List,Count
+DayFile.Tickets[].Payments[].CardInfo.AuthHistory[],207,Obj,AcqRefData,AttemptedGratuityAmount,AttemptedPurchaseAmount,AVSCode,CVV2Result,EMVAID,EMVARC,EMVCode,EMVCVM,EMVCVMString,EMVEntryMode,EMVEntryModeString,EMVIAD,EMVName,EMVPreParseReference,EMVTerminalID,EMVTransType,EMVTSI,EMVTVR,IsEMVAuthAttempt,PreParsePrintData,ProcessData,ProcessorDateTime,RecordNo
+DayFile.Tickets[].DeliveryPayments,208,List,Count
+DayFile.Tickets[].DeliveryPayments[],209,Obj,ItemSeq,ExternalID,Name,GroupName,Caption,Caption2,Tendered,ForeignAmountTendered,ExchangeRate,Converted,Amount,ChangeAmount,TransID,BaseChangeTransID,ForeignChangeTransID,Reference,CustomerAccount,AmountAuth,GratuityAmount,MultiTicketPayment,PaymentDateTime,ExpectedPaymentItemSeq,Expands,RoundingAmount,RoundingThreshold,RoundingMethod
+DayFile.Tickets[].DeliveryPayments[].CardInfo,210,Obj,CardPresent,CardSwiped,CardType,CreditCardType,CardSource,CardSourceSetTime,IsEMVAuthAttempt,CardNumberVerifiedByProcessor,CardNumber,CardExpiry,ProcessorInterface,Processor,MerchantID,InvoiceNumberStr,InvoiceNumberStr2,AVSZip,AVSStreet,AVSCode,CardMemberName,CVV2Result,AuthCode,Reference,TransID,RefTransID,TroutD,AcqRefData,ProcessData,Duplicate,DateTime,ActionCode,CardBalance,AuthorizedAmount,PartialAuthorization,ObtainedPreauth,ObtainedPostauth,RecordNo,MonetraTempToken,MonetraTempTokenDelete,PaymentType,SubmissionType,NetworkTransactionID,ProcessorDateTime,EMVEntryMode,EMVEntryModeString,EMVCVM,EMVCVMString,EMVResponseCode,EMVIssuerResponseCode,EMVLanguage,EMVBatch,EMVAID,EMVName,EMVTVR,EMVTSI,EMVACType,EMVAC,EMVCode,EMVStan,EMVCustom,EMVTransType,EMVErrorCode,EMVNeedSignature,EMVVerbiage,EMVItem,EMVMsoftCode,EMVPhardCode,EMVPCLevel,EMVIAD,EMVARC,EMVTerminalID,PrintData,AttemptedPurchaseAmount,AttemptedGratuityAmount,DeviceTipAmount,GratuityAmount,AccountType
+DayFile.Tickets[].DeliveryPayments[].CardInfo.AuthHistory,211,List,Count
+DayFile.Tickets[].DeliveryPayments[].CardInfo.AuthHistory[],212,Obj,AcqRefData,AttemptedGratuityAmount,AttemptedPurchaseAmount,AVSCode,CVV2Result,EMVAID,EMVARC,EMVCode,EMVCVM,EMVCVMString,EMVEntryMode,EMVEntryModeString,EMVIAD,EMVName,EMVPreParseReference,EMVTerminalID,EMVTransType,EMVTSI,EMVTVR,IsEMVAuthAttempt,PreParsePrintData,ProcessData,ProcessorDateTime,RecordNo
+DayFile.Tickets[].Adjustments,213,List,Count
+DayFile.Tickets[].Adjustments[],214,Obj,AdjustmentType,ItemSeq,TransType,TransID,Caption,Caption2,Amount,LinkedPaymentItemSeq,LinkedPaymentExternalID,StationAccountID,StationDrawerName
+DayFile.Tickets[].OpenSeats,215,List,Count
+DayFile.Tickets[].OpenSeats[],216,Obj,SeatNumber
+DayFile.Tickets[].TicketPrintSettings,217,Obj,SkipPriming,RoutePrintCount,KDSSendCount,NoteRoutePrintCount,TicketStatus,ModifiedItems,Version,Seq,SavedPrintRequired,SavedPrintCount,TicketJustVoided
+DayFile.Tickets[].TicketPrintSettings.MSPrintSettings,218,List,Count
+DayFile.Tickets[].TicketPrintSettings.MSPrintSettings[],219,Obj,ItemSeq,LabelPrintRequired,SingleLabelPrintRequired,RoutePrintRequired,KDSSendRequired,RoutePrintCount,KDSSendCount,Version,Modified
+DayFile.Tickets[].LoyaltyAccountInfo,220,Obj,AccountID,EntryType,Registered,Tier,CustomerName,CustomerEmail,POSMessagesToPrint,POSMessagesPrinted,MaskedCardNumber,AccountInfoRetrieved,AccountActive,EANBarCode,GroupingTransactionId
+DayFile.Tickets[].LoyaltyAccountInfo.Balances,221,List,Count
+DayFile.Tickets[].LoyaltyAccountInfo.Balances[],222,Obj,Name,ID,Balance
+DayFile.Tickets[].LoyaltyAccountInfo.Balances[].Expirations,223,List,Count
+DayFile.Tickets[].LoyaltyAccountInfo.Balances[].Expirations[],224,Obj,Date,Quantity
+DayFile.Tickets[].LoyaltyAuthorizationInfo,225,Obj
+DayFile.Tickets[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo,226,Obj,AccountID,EntryType,Registered,Tier,CustomerName,CustomerEmail,POSMessagesToPrint,POSMessagesPrinted,MaskedCardNumber,AccountInfoRetrieved,AccountActive,EANBarCode,GroupingTransactionId
+DayFile.Tickets[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo.Balances,227,List,Count
+DayFile.Tickets[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo.Balances[],228,Obj,Name,ID,Balance
+DayFile.Tickets[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo.Balances[].Expirations,229,List,Count
+DayFile.Tickets[].LoyaltyAuthorizationInfo.LoyaltyAccountInfo.Balances[].Expirations[],230,Obj,Date,Quantity
+DayFile.Tickets[].LoyaltyAuthorizationInfo.Transactions,231,List,Count
+DayFile.Tickets[].LoyaltyAuthorizationInfo.Transactions[],232,Obj,TransType,BalanceID,Amount,LinkedItemSeq,AuthDateTime,AuthCode,RedemptionCode
+DayFile.Tickets[].LoyaltyAuthorizationInfo.BalanceChanges,233,List,Count
+DayFile.Tickets[].LoyaltyAuthorizationInfo.BalanceChanges[],234,Obj,ID,ExtendedID,Amount,Description
+DayFile.Tickets[].Tags,235,List,Count
+DayFile.Tickets[].Tags[],236,Obj,Name
+1,0,True,1,1,14198,2628,12/7/2023 9:00 AM,12/6/2023 9:06 PM,12/7/2023 9:00 PM,12/7/2023 12:00 AM,48.57,True,952,(999),False,False,,False,8000,105,0,False,False,True,False,dfgmManualEOD,9
+2,34
+3,200,MAXIM,ADAMS,MAXIMUS
+4,1
+5,Driver,Drivers,Back,,11,stHourly
+3,257,MADI,AUST,MADI 2
+4,1
+5,Cook,Cook,Back,,14,stHourly
+3,67,CHAD,BECKER,CHAD
+4,2
+5,Cook,Cook,Back,,11.25,stHourly
+5,Driver,Drivers,Back,,11,stHourly
+3,237,KRISTI,BERGE,KRISTI B
+4,3
+5,Corporate Staff,Corporate Staff,Managers,,0,stHourly
+5,Cook,Cook,Back,,20,stHourly
+5,Driver,Drivers,Back,,12,stHourly
+3,160,NATE,BOIES,POOH BEAR
+4,3
+5,Cook,Cook,Back,,13,stHourly
+5,Driver,Drivers,Back,,13,stHourly
+5,BUD,BUD,Back,,16,stHourly
+3,9,JACK,CARNEY,PIZZA WIZARD
+4,1
+5,Supervisor,Supervisor,Managers,,17.5,stHourly
+3,262,MATTHEW,CHRISTENSEN,MATTHEW
+4,1
+5,Driver,Drivers,Back,,11,stHourly
+3,259,DELANIE,COUNTS,DELANIE
+4,1
+5,Cook,Cook,Back,,14,stHourly
+3,244,RAUL,CUASQUE,RAUL
+4,1
+5,Cook,Cook,Back,,16,stHourly
+3,96,MARK,FLAXMAN,MARK S
+4,4
+5,Supervisor,Managers,Managers,,18,stHourly
+5,Driver,Supervisor,Managers,,12,stHourly
+5,BUD,Supervisor,Managers,,18,stHourly
+5,Admin,Managers,Managers,,18,stHourly
+3,250,ANA,GODINEZ,ANA
+4,2
+5,Cook,Cook,Back,,15,stHourly
+5,Driver,Drivers,Back,,15,stHourly
+3,248,BELLA,GODINEZ,BELLS
+4,1
+5,Cook,Cook,Back,,15,stHourly
+3,177,PHIL,GODINEZ,PHIL
+4,2
+5,Owner,SpeedLine Support,,,0,stHourly
+5,Corporate Staff,Corporate Staff,Managers,,0,stHourly
+3,176,ULISES,GODINEZ,ULISES
+4,3
+5,Owner,Owner,Managers,,0,stHourly
+5,Driver,Drivers,Back,,16,stHourly
+5,Cook,Cook,Back,,16,stHourly
+3,15,KRISTI,GORI,KRISTI
+4,1
+5,Managers,Managers,Managers,,23,stHourly
+3,252,MADDIE,HILL,MAD DOG
+4,3
+5,Cook,Cook,Back,,15,stHourly
+5,BUD,BUD,Back,,15,stHourly
+5,Supervisor,Supervisor,Managers,,16,stHourly
+3,19,RYAN,JOHNSON,RYAN
+4,1
+5,Managers,Managers,Managers,,680,stBiWeekly
+3,254,BRANDON,JORDAN,BRANDON
+4,1
+5,Cook,Cook,Back,,14,stHourly
+3,242,BRITTANY,JORDAN,BRITTANY
+4,1
+5,Cook,Cook,Back,,12,stHourly
+3,202,KRIS,KLASSY,KRIS
+4,1
+5,Cook,Cook,Back,,14.5,stHourly
+3,105,JASPER,LINDAHL,JASPER
+4,3
+5,Supervisor,Supervisor,Managers,,16,stHourly
+5,Managers,Managers,Managers,,17,stHourly
+5,BUD,BUD,Back,,0,stHourly
+3,223,ERIK,MALRAIT,ERIK
+4,2
+5,Owner,Owner,Managers,,0,stHourly
+5,Driver,Drivers,Back,,12,stHourly
+3,117,NICK,MCPHERSON,NICK
+4,3
+5,Managers,GManager,Managers,,0,stBiWeekly
+5,Driver,GManager,Managers,,0,stBiWeekly
+5,BUD,GManager,Managers,,0,stBiWeekly
+3,261,PETER,MILLER,PETE
+4,1
+5,Driver,Drivers,Back,,11,stHourly
+3,25,PLAMEN,PANAYOTOV,PLAMEN
+4,1
+5,Driver,Drivers,Back,,12,stHourly
+3,258,KENNETH,RODRIGO,KENNETH
+4,1
+5,Cook,Cook,Back,,0,stHourly
+3,215,STEPHON,SCOTT,STEPHON
+4,2
+5,Cook,Cook,Back,,16,stHourly
+5,Driver,Drivers,Back,,12,stHourly
+3,260,SOPHIA,SEGAL,SOPHIA
+4,1
+5,Cook,Cook,Back,,14,stHourly
+3,247,JEFF,SHULTS,JEFF S
+4,1
+5,Driver,Drivers,Back,,11,stHourly
+3,187,MARKAYLA,STRAUTHER,MARKAYLA
+4,1
+5,Cook,Cook,Back,,15,stHourly
+3,1,SPEEDLINE,SUPPORT,SPEEDLINE
+4,1
+5,SpeedLine Support,SpeedLine Support,,,0,stHourly
+3,245,TEST,TEST,TEST
+4,2
+5,Supervisor,Supervisor,Managers,,0,stHourly
+5,Driver,Drivers,Back,,1,stHourly
+3,263,ADAM,VANSTEENBURG,ADAM V
+4,2
+5,Cook,Cook,Back,,0,stHourly
+5,BUD,BUD,Back,,0,stHourly
+3,34,JAMES,WICKLUND,MUPPET YODA
+4,2
+5,Managers,GManager,Managers,,0,stBiWeekly
+5,Driver,GManager,Managers,,0,stBiWeekly
+6,13
+7,Supervisor,jtServer,Supervisor,Managers,,stHourly,0,9,PIZZA WIZARD,"CARNEY, JACK",12/7/2023 2:07 PM,0,0,0,0,0,0,0,0,0,9.98,17.5,0,False,8,150,12,200,40,150,40,150,False,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41468,False,0,0,0,0,0,0,0,0,0,False,0,,
+8,1
+9,12/7/2023 2:07 PM,seClockIn,,0,0
+10,0
+7,Managers,jtOther,Managers,Managers,,stHourly,2628,105,JASPER,"LINDAHL, JASPER",12/7/2023 7:52 AM,7.03,7.03,0,7.03,7.03,0,0,0,0,9.43,17,0,False,8,150,12,200,40,150,40,150,True,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41461,False,0,0,0,0,119.51,119.51,0,0,0,False,0,,
+8,2
+9,12/7/2023 7:52 AM,seClockIn,,0,0
+9,12/7/2023 2:54 PM,seClockOut,,0,0
+10,0
+7,Cook,jtOther,Cook,Back,,stHourly,2628,258,KENNETH,"RODRIGO, KENNETH",12/7/2023 9:05 AM,5,5,0,5,5,0,0,0,0,8.8,0,0,False,8,150,12,200,40,150,40,150,True,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41462,False,0,0,0,0,0,0,0,0,0,False,0,,
+8,2
+9,12/7/2023 9:05 AM,seClockIn,,0,0
+9,12/7/2023 2:05 PM,seClockOut,,0,0
+10,0
+7,Cook,jtOther,Cook,Back,,stHourly,2628,244,RAUL,"CUASQUE, RAUL",12/7/2023 9:08 AM,5.53,5.53,0,5.53,5.53,0,0,0,0,5.3,16,0,False,8,150,12,200,40,150,40,150,True,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41463,False,0,0,0,0,88.48,88.48,0,0,0,False,0,,
+8,2
+9,12/7/2023 9:08 AM,seClockIn,,0,0
+9,12/7/2023 2:40 PM,seClockOut,,0,0
+10,0
+7,Driver,jtDriver,Drivers,Back,,stHourly,2628,25,PLAMEN,"PANAYOTOV, PLAMEN",12/7/2023 9:08 AM,5.05,4.6,0.45,5.05,5.05,0,0,0,0,8.64,12,0,False,8,150,12,200,40,150,40,150,True,6,77.68,0,0,0,0,False,0,,0,0,0,0,0,0,0,41464,False,0,0,0,0,60.6,60.6,0,0,0,False,0,,
+8,6
+9,12/7/2023 9:08 AM,seClockIn,,0,0
+9,12/7/2023 12:37 PM,seLeaveStore,,0,0
+9,12/7/2023 1:04 PM,seReturnToStore,,0,0
+9,12/7/2023 1:04 PM,seLeaveStore,,0,0
+9,12/7/2023 1:04 PM,seReturnToStore,,0,0
+9,12/7/2023 2:11 PM,seClockOut,,0,0
+10,0
+7,Cook,jtOther,Cook,Back,,stHourly,2628,202,KRIS,"KLASSY, KRIS",12/7/2023 10:42 AM,3.08,3.08,0,3.08,3.08,0,0,0,0,5.18,14.5,0,False,8,150,12,200,40,150,40,150,True,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41465,False,0,0,0,0,44.66,44.66,0,0,0,False,0,,
+8,2
+9,12/7/2023 10:42 AM,seClockIn,,0,0
+9,12/7/2023 1:47 PM,seClockOut,,0,0
+10,0
+7,Owner,jtDriver,Owner,Managers,,stHourly,2628,176,ULISES,"GODINEZ, ULISES",12/7/2023 11:22 AM,9.63,9.63,0,9.63,9.63,0,0,0,0,10.8,0,0,False,8,150,12,200,40,150,40,150,True,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41466,True,0,0,0,0,0,0,0,0,0,False,0,,
+8,2
+9,12/7/2023 11:22 AM,seClockIn,,0,0
+9,12/7/2023 9:00 PM,seClockOut,,0,0
+10,0
+7,Driver,jtBoth,Drivers,Back,,stHourly,2628,160,POOH BEAR,"BOIES, NATE",12/7/2023 2:00 PM,7,5.05,1.95,7,7,0,0,0,0,14.28,13,0,False,8,150,12,200,40,150,40,150,True,5,14.76,0,0,0,0,False,0,,0,0,0,0,0,0,0,41467,True,0,0,0,0,91,91,0,0,0,False,0,,
+8,12
+9,12/7/2023 2:00 PM,seClockIn,,0,0
+9,12/7/2023 4:47 PM,seLeaveStore,,0,0
+9,12/7/2023 5:18 PM,seReturnToStore,,0,0
+9,12/7/2023 5:42 PM,seLeaveStore,,0,0
+9,12/7/2023 6:05 PM,seReturnToStore,,0,0
+9,12/7/2023 6:26 PM,seLeaveStore,,0,0
+9,12/7/2023 6:38 PM,seReturnToStore,,0,0
+9,12/7/2023 7:00 PM,seLeaveStore,,0,0
+9,12/7/2023 7:09 PM,seReturnToStore,,0,0
+9,12/7/2023 8:02 PM,seLeaveStore,,0,0
+9,12/7/2023 8:44 PM,seReturnToStore,,0,0
+9,12/7/2023 9:00 PM,seClockOut,,0,0
+10,0
+7,Driver,jtDriver,Drivers,Back,,stHourly,2628,262,MATTHEW,"CHRISTENSEN, MATTHEW",12/7/2023 3:51 PM,3.75,2.32,1.43,3.75,3.75,0,0,0,0,10.35,11,0,False,8,150,12,200,40,150,40,150,True,5,28.71,0,0,0,0,False,0,,0,0,0,0,0,0,0,41469,False,0,0,0,0,41.25,41.25,0,0,0,False,0,,
+8,10
+9,12/7/2023 3:51 PM,seClockIn,,0,0
+9,12/7/2023 5:05 PM,seLeaveStore,,0,0
+9,12/7/2023 5:33 PM,seReturnToStore,,0,0
+9,12/7/2023 6:05 PM,seLeaveStore,,0,0
+9,12/7/2023 6:27 PM,seReturnToStore,,0,0
+9,12/7/2023 6:27 PM,seLeaveStore,,0,0
+9,12/7/2023 6:50 PM,seReturnToStore,,0,0
+9,12/7/2023 7:16 PM,seLeaveStore,,0,0
+9,12/7/2023 7:29 PM,seReturnToStore,,0,0
+9,12/7/2023 7:36 PM,seClockOut,,0,0
+10,0
+7,Cook,jtServer,Cook,Back,,stHourly,2628,263,ADAM V,"VANSTEENBURG, ADAM",12/7/2023 3:58 PM,3.58,3.58,0,3.58,3.58,0,0,0,0,6.03,0,0,False,8,150,12,200,40,150,40,150,True,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41470,False,0,0,0,0,0,0,0,0,0,False,0,,
+8,2
+9,12/7/2023 3:58 PM,seClockIn,,0,0
+9,12/7/2023 7:33 PM,seClockOut,,0,0
+10,0
+7,Managers,jtOther,GManager,Managers,,stBiWeekly,2628,34,MUPPET YODA,"WICKLUND, JAMES",12/7/2023 4:30 PM,1.77,1.77,0,1.77,1.77,0,0,0,0,0,0,0,False,8,150,12,200,40,150,40,150,True,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41471,False,0,0,0,0,0,0,0,0,0,False,0,,
+8,2
+9,12/7/2023 4:30 PM,seClockIn,,0,0
+9,12/7/2023 6:16 PM,seClockOut,,0,0
+10,0
+7,Cook,jtOther,Cook,Back,,stHourly,2628,257,MADI 2,"AUST, MADI",12/7/2023 4:32 PM,2.65,2.65,0,2.65,2.65,0,0,0,0,2.02,14,0,False,8,150,12,200,40,150,40,150,True,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41472,False,0,0,0,0,37.1,37.1,0,0,0,False,0,,
+8,2
+9,12/7/2023 4:32 PM,seClockIn,,0,0
+9,12/7/2023 7:11 PM,seClockOut,,0,0
+10,0
+7,Cook,jtOther,Cook,Back,,stHourly,2628,254,BRANDON,"JORDAN, BRANDON",12/7/2023 4:37 PM,2.63,2.63,0,2.63,2.63,0,0,0,0,0,14,0,False,8,150,12,200,40,150,40,150,True,0,0,0,0,0,0,False,0,,0,0,0,0,0,0,0,41473,False,0,0,0,0,36.82,36.82,0,0,0,False,0,,
+8,2
+9,12/7/2023 4:37 PM,seClockIn,,0,0
+9,12/7/2023 7:15 PM,seClockOut,,0,0
+10,0
+14,8
+15,ADAM V,,25025,12/7/2023 3:58 PM,12/7/2023 7:33 PM
+16,263,"VANSTEENBURG, ADAM",12/7/2023 7:33 PM
+17,10
+18,Cash,0,0,0,0,0
+19,11
+20,Pennies,0.01,0
+20,Nickels,0.05,0
+20,Dimes,0.1,0
+20,Quarters,0.25,0
+20,Dollars,1,0
+20,Fives,5,0
+20,Tens,10,0
+20,Twenties,20,0
+20,Fifties,50,0
+20,Checks,0,0
+20,Hundred,100,0
+18,VISA,0,0,0,0,0
+19,0
+18,MasterCard,0,0,0,0,0
+19,0
+18,American Express,0,0,0,0,0
